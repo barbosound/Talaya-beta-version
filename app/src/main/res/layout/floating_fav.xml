@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/fotos"
+            android:layout_marginTop="56dp"
+            android:background="@drawable/layer_card_background">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPageAndroid"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/descripcio"
+                android:background="@drawable/gradient_descripcio">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/capsalera"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:id="@+id/textNom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nom Casa,"
+                            android:textColor="@android:color/background_dark"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="40dp">
+
+                    <TextView
+                        android:id="@+id/textPob"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Poble"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textComarca"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Comarca"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="70dp">
+
+                    <TextView
+                        android:id="@+id/textCapacitat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Capacitat"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textPreu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Preu"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="20dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:background="@drawable/borde_puntuacio"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textPuntuacio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:text="5,0"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="45dp"
+                        android:id="@+id/rating"
+                        android:background="@drawable/borde_puntuacio2"
+                        android:orientation="horizontal">
+
+                        <RatingBar
+                            android:id="@+id/avgRating"
+                            style="@style/Widget.AppCompat.RatingBar.Small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:layout_marginLeft="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:focusableInTouchMode="false"
+                            android:isIndicator="true"
+                            android:numStars="5"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        >
+
+                        <Button
+                            android:id="@+id/buttonValora"
+                            android:layout_width="150dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/borde_valora"
+                            android:elevation="10dp"
+                            android:text="Valora"
+                            android:clickable="true"
+                            android:textAllCaps="false" />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/favButton"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        app:fabSize="normal"
+        android:layout_marginRight="20dp"
+        app:layout_anchor="@id/viewPageAndroid"
+        app:backgroundTint="@color/verd"
+        app:layout_anchorGravity="bottom|right|end"
+        app:elevation="5dp"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/missatgeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        app:fabSize="normal"
+        android:layout_marginRight="85dp"
+        app:layout_anchor="@id/viewPageAndroid"
+        app:backgroundTint="@color/gris"
+        app:layout_anchorGravity="bottom|right|end"
+        app:elevation="5dp"/>
+
+</android.support.design.widget.CoordinatorLayout>

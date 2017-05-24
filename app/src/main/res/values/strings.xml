@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Talaya</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_adapter_chat">AdapterChat</string>
+    <string name="title_activity_dins_conversa">DinsConversa</string>
+</resources>

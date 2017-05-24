@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/msg_linear_frame_left"
+    style="@style/WidgetTextMessage.Left"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/id">
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/perfilmissatge" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/msg_bubble_background_textesquerra"
+        style="@style/BubbleTextFrame.Left"
+        android:visibility="visible">
+
+
+        <LinearLayout
+            android:id="@+id/msg_linear_list_item_left"
+            style="@style/LinearWidgetTextMsg.Left">
+
+            <!--LinearLayout should place its actual message widget here.-->
+            <LinearLayout
+                android:id="@+id/msg_custom_widget_frame_topesquerra"
+                style="@style/CustomWidgetFrame.Left" />
+
+            <TextView
+                android:id="@+id/msg_text_time_messageesquerra"
+                style="@style/TextViewTimeMsg.Left"
+                tools:text="August 16" />
+
+            <TextView
+                android:id="@+id/msg_text_messageesquerra"
+                style="@style/TextViewTextMsg.Left"
+                tools:text="messagertdfsscsd" />
+
+            <!--LinearLayout should place its actual message widget here.-->
+            <LinearLayout
+                android:id="@+id/msg_custom_widget_frame_bottomesquerra"
+                style="@style/CustomWidgetFrame.Left" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/msg_bubble_background_text"
+        style="@style/BubbleTextFrame.Right"
+        android:baselineAligned="false"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:visibility="visible"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:id="@+id/msg_linear_list_item_right"
+            style="@style/LinearWidgetTextMsg.Right">
+
+            <!--LinearLayout should place its actual message widget here.-->
+            <LinearLayout
+                android:id="@+id/msg_custom_widget_frame_top"
+                style="@style/CustomWidgetFrame.Right" />
+
+            <TextView
+                android:id="@+id/msg_text_time_message"
+                style="@style/TextViewTimeMsg.Right"
+                tools:text="current time August" />
+
+            <TextView
+                android:id="@+id/msg_text_message"
+                style="@style/TextViewTextMsg.Right"
+                tools:text="message the long one message" />
+
+            <!--LinearLayout should place its actual message widget here.-->
+            <LinearLayout
+                android:id="@+id/msg_custom_widget_frame_bottom"
+                style="@style/CustomWidgetFrame.Right" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

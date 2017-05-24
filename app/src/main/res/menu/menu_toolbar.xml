@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item android:id="@+id/qui_som"
+        android:title="Qui som?"
+        app:showAsAction="never"/>
+    <item android:id="@+id/avis_legal"
+        android:title="Avís Legal"
+        app:showAsAction="never"/>
+    <item android:id="@+id/perfil"
+        android:title="Perfil"
+        app:showAsAction="never"/>
+    <item android:id="@+id/refresh"
+        android:title="Refrescar"
+        android:icon="@drawable/refresh"
+        app:showAsAction="always"/>
+    <item android:id="@+id/advanced"
+        android:title="cerca"
+        android:icon="@drawable/search"
+        app:showAsAction="always"/>
+
+</menu>

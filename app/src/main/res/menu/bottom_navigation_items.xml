@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_bottom_inici"
+        android:enabled="true"
+        android:title="Inici"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/missatges"
+        android:icon="@drawable/ic_bottom_missatges"
+        android:enabled="true"
+        android:title="Missatges"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/Reserves"
+        android:icon="@drawable/ic_bottom_perfil"
+        android:enabled="true"
+        android:title="Reserva"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/surt"
+        android:icon="@drawable/ic_bottom_sortir"
+        android:enabled="true"
+        android:title="Surt"
+        app:showAsAction="always"/>
+
+</menu>

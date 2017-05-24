@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="multispinner_entries">
+        <item>Billar</item>
+        <item>Camp de futbol</item>
+        <item>Camp de tennis</item>
+        <item>Internet</item>
+        <item>Piscina</item>
+        <item>Projector</item>
+        <item>Sala comuna</item>
+        <item>Tenis taula</item>
+    </string-array>
+</resources>

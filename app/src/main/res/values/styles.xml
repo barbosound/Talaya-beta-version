@@ -1,0 +1,112 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">false</item>
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AvatarImageViewStyle.Right" />
+
+    <style name="AvatarImageViewStyle.Left" />
+
+    <style name="AvatarImageViewStyle">
+        <item name="android:layout_width">@dimen/image_view_small_avatar_layout_width</item>
+        <item name="android:layout_height">@dimen/image_view_small_avatar_layout_width</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:src">@drawable/placeholder_user</item>
+    </style>
+
+    <style name="WidgetTextMessage.Right" />
+
+    <style name="WidgetTextMessage.Left" />
+
+    <style name="CustomWidgetFrame.Right">
+        <item name="android:layout_gravity">right</item>
+    </style>
+
+    <style name="WidgetTextMessage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="LinearWidgetTextMsg.Left">
+        <item name="android:paddingLeft">@dimen/padding_medium</item>
+    </style>
+
+    <style name="BubbleTextFrame.Right">
+        <item name="android:background">@drawable/right_bubble</item>
+    </style>
+
+    <style name="BubbleTextFrame.Left">
+        <item name="android:background">@drawable/left_bubble</item>
+    </style>
+
+    <style name="BubbleTextFrame">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">@dimen/chat_babble_margin</item>
+        <item name="android:padding">@dimen/padding_small</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="TextViewTimeMsg.Right">
+        <item name="android:layout_gravity">right</item>
+    </style>
+
+    <style name="TextViewTimeMsg.Left" />
+
+    <style name="TextViewTimeMsg">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingRight">@dimen/padding_medium</item>
+    </style>
+
+    <style name="CustomWidgetFrame.Left" />
+
+    <style name="CustomWidgetFrame">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="LinearWidgetTextMsg.Right">
+        <item name="android:paddingRight">@dimen/padding_medium</item>
+    </style>
+
+    <style name="LinearWidgetTextMsg">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="TextViewTextMsg.Right" />
+
+    <style name="TextViewTextMsg.Left" />
+
+    <style name="TextViewTextMsg">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:paddingBottom">@dimen/padding_small</item>
+        <item name="android:paddingRight">@dimen/padding_small</item>
+        <item name="android:autoLink">all</item>
+        <item name="android:textColorLink">@color/text_color_link</item>
+        <item name="android:textIsSelectable">true</item>
+    </style>
+
+</resources>

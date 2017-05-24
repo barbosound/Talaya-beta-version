@@ -1,0 +1,14 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="chat_babble_margin">4dp</dimen>
+    <dimen name="padding_small">4dp</dimen>
+    <dimen name="padding_common">8dp</dimen>
+    <dimen name="padding_medium">@dimen/padding_common</dimen>
+    <dimen name="text_size_small">15sp</dimen>
+    <dimen name="text_size_medium">18sp</dimen>
+    <dimen name="image_view_small_avatar_layout_width">48dp</dimen>
+    <dimen name="avatar_border_width">1dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>
