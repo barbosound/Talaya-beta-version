@@ -42,8 +42,6 @@ public class missatges extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 
-
-
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
@@ -102,8 +100,6 @@ public class missatges extends Fragment {
 
 
         //ENVIO EL MEU ID, el ID del que ho rep i el seu nom.
-
-
 
         //a.crearconversa(usuariActiu.getIdUsuari(),141,"Gindalf");
 
@@ -167,8 +163,6 @@ public class missatges extends Fragment {
         converses.get(getActivity(), url, new AsyncHttpResponseHandler() {
 
 
-
-
             @Override
             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
 
@@ -196,8 +190,6 @@ public class missatges extends Fragment {
                         mostrarconverses(cursor, from, to);
 
 
-
-
                     }
 
                 }catch (JSONException e) {
@@ -206,7 +198,6 @@ public class missatges extends Fragment {
 
                 }
 
-
             }
 
             @Override
@@ -214,7 +205,6 @@ public class missatges extends Fragment {
 
                 Snackbar.make(view, "Error de conexió", Snackbar.LENGTH_LONG)
                         .show();
-
 
             }
         });

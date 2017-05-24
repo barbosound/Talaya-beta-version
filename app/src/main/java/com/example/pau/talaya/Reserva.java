@@ -102,7 +102,7 @@ public class Reserva extends Fragment {
             FKCasaFin = getArguments().getStringArrayList("FKCasaFin");
             EstatFin = getArguments().getStringArrayList("EstatFin");
 
-
+            //hem de separar les resreves pedents i acceptades de les finalitzades
             bPen.putStringArrayList("id",idReserva);
             bPen.putStringArrayList("DE",DataEntrada);
             bPen.putStringArrayList("DS",DataSortida);
@@ -163,6 +163,7 @@ public class Reserva extends Fragment {
     private void setupViewPager(ViewPager viewPager) {
         MIFragmentPageManager adapter = new MIFragmentPageManager(getChildFragmentManager());
 
+        //Serveix per passar el bundle a un fragment
         Fpendents.setArguments(bPen);
         adapter.addFragment(Fpendents, "Pendents");
 

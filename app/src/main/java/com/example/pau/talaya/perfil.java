@@ -101,6 +101,7 @@ public class perfil extends AppCompatActivity {
 
         HttpDelete httpdel = new HttpDelete(url);
 
+        //Ens obliga a posat aquest tros de codi per poder realitzar post i delet
         int SDK_INT = android.os.Build.VERSION.SDK_INT;
         if (SDK_INT > 8)
         {

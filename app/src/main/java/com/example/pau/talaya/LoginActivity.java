@@ -28,12 +28,6 @@ public class LoginActivity extends AppCompatActivity {
     ArrayList <String> usuaris = new ArrayList<>();
     ArrayList <String> contrasenya = new ArrayList<>();
 
-    String contra1;
-    String contra2;
-    String contra3;
-    String contra4;
-    String contra5;
-
     EditText txtUsr;
     EditText txtContra;
 
@@ -83,29 +77,12 @@ public class LoginActivity extends AppCompatActivity {
     public void onResume(){
         super.onResume();
 
-//        txtContra.setText("");
-//        txtUsr.setText("");
+        txtContra.setText("");
+        txtUsr.setText("");
 
     }
 
-    /* Retorna un hash a partir de un tipo y un texto */
-    public static String getHash(String txt) {
-        try {
-            java.security.MessageDigest md = java.security.MessageDigest
-                    .getInstance("SHA1");
-            byte[] array = md.digest(txt.getBytes());
-            StringBuffer sb = new StringBuffer();
-            for (int i = 0; i < array.length; ++i) {
-                sb.append(Integer.toHexString((array[i] & 0xFF) | 0x100)
-                        .substring(1, 3));
-            }
-            return sb.toString();
-        } catch (java.security.NoSuchAlgorithmException e) {
-            System.out.println(e.getMessage());
-        }
-        return null;
-    }
-
+    //fem el login contra a la api i creem una classe usuari per tenir guardades les seves dades
     private void consultaApiLogin(final View view, String correu, String contrasenya){
 
         final String url = "http://talaiaapi.azurewebsites.net/api/usuari/?correu="+correu+"&pass="+contrasenya;

@@ -99,6 +99,7 @@ public class home extends AppCompatActivity implements ListCases.OnFragmentInter
 
         view = getWindow().getDecorView().getRootView();
 
+        //si s'ha aplicat filtre es mostre el filtre, sino es mostren totes les cases
         if (Bfiltre){
 
             consultaFiltreReserves(view);
@@ -114,6 +115,7 @@ public class home extends AppCompatActivity implements ListCases.OnFragmentInter
             consultaFavorits(view);
         }
 
+        //menú inferior
         bottomNavigationView.setOnNavigationItemSelectedListener(
                 new BottomNavigationView.OnNavigationItemSelectedListener() {
                     @Override
@@ -201,8 +203,7 @@ public class home extends AppCompatActivity implements ListCases.OnFragmentInter
         return super.onCreateOptionsMenu(menu);
     }
 
-    //MENU SETTINGS\\
-    //carreguem els fragments al frame de home\\
+    //carreguem els fragments al frame de home
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
@@ -261,7 +262,7 @@ public class home extends AppCompatActivity implements ListCases.OnFragmentInter
     public void onFragmentInteraction(Uri uri) {
 
     }
-
+    //get de totes les cases i es crea un objecte casa per a cada una d'elles, guardant-la a una ArryList
     private void consultaApiCasa(final View view){
 
         AsyncHttpClient clientCasa;
@@ -404,7 +405,7 @@ public class home extends AppCompatActivity implements ListCases.OnFragmentInter
         });
 
     }
-
+    //get de totes les reserves del usuari actiu
     private void consultaApiReserves(final View view){
 
         AsyncHttpClient clientReserva;
@@ -517,7 +518,7 @@ public class home extends AppCompatActivity implements ListCases.OnFragmentInter
         });
 
     }
-
+    //get de les cases favorites del usuari
     private void consultaFavorits(final View view){
 
         idFavorits.clear();
