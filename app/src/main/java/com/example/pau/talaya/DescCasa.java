@@ -70,13 +70,6 @@ public class DescCasa extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.desc_casa);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.tool);
-        toolbar.setNavigationIcon(getResources().getDrawable(R.drawable.ic_flecha_back));
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowTitleEnabled(true);
-        getSupportActionBar().setTitle(CasaList.get(indexCasa).getNom());
-
         String capacitat, preu, nom, id;
 
         view = getWindow().getDecorView().getRootView();
@@ -120,6 +113,13 @@ public class DescCasa extends AppCompatActivity{
 
             }
         }
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.tool);
+        toolbar.setNavigationIcon(getResources().getDrawable(R.drawable.ic_flecha_back));
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowTitleEnabled(true);
+        getSupportActionBar().setTitle(CasaList.get(indexCasa).getNom());
 
         nom = CasaList.get(indexCasa).getNom() + ",";
         poblacio = CasaList.get(indexCasa).getPoblacio() +",";
