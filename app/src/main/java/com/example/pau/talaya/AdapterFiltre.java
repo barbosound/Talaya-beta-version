@@ -40,6 +40,7 @@ public class AdapterFiltre extends ArrayAdapter<Casa> {
     public View getView(int position, View convertView, ViewGroup parent) {
         View view;
         Float avg;
+        String preu;
 
         LayoutInflater inflater = LayoutInflater.from(getContext());
 
@@ -55,11 +56,14 @@ public class AdapterFiltre extends ArrayAdapter<Casa> {
         TextView txtnom = (TextView)view.findViewById(R.id.textNom);
         TextView txtdesc = (TextView)view.findViewById(R.id.textCap);
         TextView txtcom = (TextView)view.findViewById(R.id.textComarca);
+        TextView txtpreu = (TextView)view.findViewById(R.id.textPreu);
 
         txtid.setText(String.valueOf(CasaFiltre.get(position).getIdCasa()));
         txtnom.setText(CasaFiltre.get(position).getNom());
         txtdesc.setText(String.valueOf(CasaFiltre.get(position).getCapacitat()));
         txtcom.setText("("+CasaFiltre.get(position).getComarca()+")");
+        preu = String.valueOf(CasaList.get(position).getPreuBasic() +" €");
+        txtpreu.setText(preu);
         avg = Float.parseFloat(String.valueOf(CasaFiltre.get(position).getMitjana()));
 
         avgRating.setEnabled(false);
