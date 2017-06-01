@@ -99,6 +99,7 @@ public class DescCasa extends AppCompatActivity{
 
         Button reserva = (Button)findViewById(R.id.btnReserva);
         final Button valora = (Button)findViewById(R.id.buttonValora);
+        Button comentaris = (Button)findViewById(R.id.btnComen);
 
         valora.bringToFront();
 
@@ -348,6 +349,22 @@ public class DescCasa extends AppCompatActivity{
                     }
                 });
                 dialog.show();
+            }
+        });
+
+        comentaris.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intencio = new Intent(view.getContext(),Comentaris.class);
+
+                Bundle b = new Bundle();
+
+                b.putInt("idCasa",CasaList.get(indexCasa).getIdCasa());
+
+                intencio.putExtras(b);
+
+                startActivity(intencio);
             }
         });
 

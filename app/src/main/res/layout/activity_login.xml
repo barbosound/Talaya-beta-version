@@ -48,7 +48,7 @@
             android:id="@+id/editText"
             android:textAlignment="center"
             android:hint="Correu"
-            android:text=""
+            android:text="agusti"
             android:background="@android:color/transparent"
             />
     </RelativeLayout>
@@ -71,7 +71,7 @@
             android:id="@+id/editText4"
             android:textAlignment="center"
             android:hint="Contrasenya"
-            android:text=""
+            android:text="password"
             android:background="@android:color/transparent"/>
     </RelativeLayout>
 

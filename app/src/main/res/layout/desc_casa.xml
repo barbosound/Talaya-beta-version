@@ -94,7 +94,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:layout_marginBottom="30dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/layer_card_background"
             >
 
@@ -205,7 +205,22 @@
                     android:contentDescription="instal" />
             </LinearLayout>
 
+
         </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <Button
+                android:id="@+id/btnComen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Comentaris" />
+        </LinearLayout>
 
     </LinearLayout>
 
